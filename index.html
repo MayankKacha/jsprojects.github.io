@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Javascript</title>
+    <title>Javascript projects</title>
 </head>
 
 <body>
@@ -17,6 +17,13 @@
 
     <div class="container-2">
         <h2>Cat Generator</h2>
+        <button type="button" id="button1" class="btn btn-info" onclick="showCatGenInfo()">Info</button>
+        
+            <h6 id="h6ForCat" class="h6" style="color: crimson; ">
+                This will fetch random cat images from internet and will show here on press of below button.
+            </h6>
+      
+        
         <button class="btn btn-success" id="Cat-generator" onclick="catgenerator()">Generate cat</button>
 
         <div class="flexbox-container-2" id="cat-gen-div">
@@ -25,6 +32,10 @@
     </div>
     <div class="container-3">
         <h2>Rock, Papers and Scissors. </h2>
+        <button type="button" class="btn btn-info" onclick="showRPSInfo()">Info</button>
+        <h6 id="h6ForCat1" class="h6" style="color: crimson; display: none;" >
+            This is most famous game that we have played in our childhood, where one selects anything from 3 different things(rock, paper, scissors) and another person also selects 1 from 3 things. here I have implemented this game WE vs BOT.
+        </h6>
         <div class="flexbox-rps" id="tempdiv">
             <div class="flexbox-rps" id="flexbox-rps-div">
                 <img src="https://s3.amazonaws.com/s3.frank.itlab.us/photo-essays/small/may_15_5155_lonely_rock.jpg"
@@ -43,6 +54,10 @@
     <div class="container-4">
         <h2 id="change-my-color">Change the Color of All Buttons.
         </h2>
+        <button type="button" class="btn btn-info" onclick="showChangeButtonInfo()">Info</button>
+        <h6 id="h6ForCat2" class="h6" style="color: crimson; ">
+            This is fun part of the project where we can change colors of all the buttons present in this page.
+        </h6>
         <div class="flexbox-pick-color">
             <form action="">
                 <select name="backdrop" id="background" onchange="buttonColorChange(this)">
@@ -60,6 +75,10 @@
     </div>
     <div class="container-5">
         <h1>BlackJack</h1>
+        <button type="button" class="btn btn-info" onclick="showBlackJackInfo()">Info</button>
+        <h6 id="h6ForCat3" class="h6" style="color: crimson;">
+            In this game there are three buttons 1) Hit , 2)Stand ,3)Deal. this is simpler version of blackjack game where the one making higher points than other, wins. maximum limit of scores are 21. Hit button is for the person playing this game so whenever we press that button one new card will be added. Stand button is for Bot to play whenever we press that button, card will start appearing in the bot side. and whose score is higher will be declared as a winner and the same will also be updated in the sccore table below. Happy playing!
+        </h6>
         <h3> <span id="blackjack-result"> Let's Play! </span></h3>
 
         <div class="flex-blackjack-row-1">
@@ -104,6 +123,11 @@
     </div>
 
     <div class="container-6">   
+        <h1>Random people generator</h1>
+        <button type="button" class="btn btn-info" onclick="showPeopleInfo()">Info</button>
+        <h6 id="h6ForCat4" class="h6" style="color: crimson; ">   
+            It generates 10 random people everytime the page refreshes after making an api call to https://randomuser.me/api/ 
+        </h6>
         <div class="flex-ajax-row-1">
 
         </div>

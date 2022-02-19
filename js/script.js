@@ -333,4 +333,55 @@ fetch(url)
         }
     });
 
-    let title= str=>str[0].toUpperCase() + str.slice(1);
+let title = str => str[0].toUpperCase() + str.slice(1);
+
+
+function showCatGenInfo() {
+    
+    var x = document.getElementById("h6ForCat");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function showRPSInfo() {
+    
+    var x = document.getElementById("h6ForCat1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function showChangeButtonInfo() {
+    
+    var x = document.getElementById("h6ForCat2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function showBlackJackInfo() {
+    
+    var x = document.getElementById("h6ForCat3");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function showPeopleInfo() {
+    
+    var x = document.getElementById("h6ForCat4");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

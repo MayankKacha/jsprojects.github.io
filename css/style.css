@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+.h6{
+    font-style: italic;
+    display: none;
+}
+
 .flexbox-container-1 , .flexbox-pick-color , .flex-ajax-row-1  , .flexbox-rps , .flex-blackjack-row-1 , .flex-blackjack-row-2 , .flex-blackjack-row-3 {
     display: flex;
     border: 1px solid black;
