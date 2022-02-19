@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Javascript</title>
+</head>
+
+<body>
+    
+
+    <div class="container-2">
+        <h2>Cat Generator</h2>
+        <button class="btn btn-success" id="Cat-generator" onclick="catgenerator()">Generate cat</button>
+
+        <div class="flexbox-container-2" id="cat-gen-div">
+
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Rock, Papers and Scissors. </h2>
+        <div class="flexbox-rps" id="tempdiv">
+            <div class="flexbox-rps" id="flexbox-rps-div">
+                <img src="https://s3.amazonaws.com/s3.frank.itlab.us/photo-essays/small/may_15_5155_lonely_rock.jpg"
+                    id="rock" height="150" width="150" onclick="rpsGame(this)">
+                <img src="https://shop.dkoutlet.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/C/D/CD-8715_L.jpg"
+                    alt="" id="paper" height="150" width="150" onclick="rpsGame(this)">
+                <img src="http://www.clipartbest.com/cliparts/KTn/Xj6/KTnXj6Mgc.png" alt="" id="scissors" height="150"
+                    width="150" onclick="rpsGame(this)">
+    
+            </div>
+        </div>
+        
+        <button class="btn btn-danger" onclick="rpsReset()">Reset</button>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Change the Color of All Buttons.
+        </h2>
+        <div class="flexbox-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Instagram!</button>
+            <button class="btn btn-danger">Google!</button>
+            <button class="btn btn-success">Yahoo!</button>
+            <button class="btn btn-warning">FaceBook!</button>
+        </div>
+    </div>
+    <div class="container-5">
+        <h1>BlackJack</h1>
+        <h3> <span id="blackjack-result"> Let's Play! </span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="yourbox">
+                <h2> You: <span id="your-blackjack-result">0</span> </h2>
+            </div>
+
+            <div id="dealerbox">
+                <h2> Dealer(Computer): <span id="dealer-blackjack-result">0</span> </h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+                <button class="btn-lg btn-block" id="blackjack-reset-table">Reset the table</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>
+                        Wins
+                    </th>
+                    <th>
+                        Losses
+                    </th>
+                    <th>
+                        Draws
+                    </th>
+                </tr>
+                <tr>
+                    <td> <span id="wins"> 0 </span> </td>
+                    <td> <span id="losses"> 0 </span> </td>
+                    <td> <span id="draws"> 0 </span> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container-6">   
+        <div class="flex-ajax-row-1">
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
